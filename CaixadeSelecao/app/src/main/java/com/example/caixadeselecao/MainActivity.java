@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        textoResultado = findViewById(R.id.textResultado);
+
 
         //CheckBox
         checkVerde    = findViewById(R.id.checkVerde);
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 if ( i == R.id.radioButtonMasculino ){
                     textoResultado.setText("Masculino");
-                }else if(){
+                }else if(i == R.id.radioButtonFeminino ){
                     textoResultado.setText("Feminino");
                 }
             }
@@ -70,11 +72,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
+/*
     public void enviar(View view){
 
         radioButton();
     }
+
+ */
 
 
 
